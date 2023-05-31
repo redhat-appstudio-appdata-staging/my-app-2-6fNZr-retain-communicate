@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-stjp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/pshivpuj-tenant/my-app-2/devfile-sample-java-springboot-basic-stjp@sha256:d4dbe17d80006307dfb656f7b885e68c610d0bcffc364cd9a1e858793d3265c4
+        name: my-java-springboot
+        resources: {}
+status: {}
